@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <!-- header -->
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <div class="logo">
+                    <i class="fa-solid fa-earth-americas"></i>
+                </div>
+                <div id="nav" class="link">
+                    <div class="keydown"></div>
+                    <li><a class="header-a" href="">首<p style="color: transparent;">頁首</p>頁</a></li>
+                    <li><a class="header-a" href="">免費圖表</a></li>
+                    <li><a class="header-a" href="">付費圖表</a></li>
+                    <li><a class="header-a" href="">模板圖表</a></li>
+                    <li><a class="header-a" href="">其他設定</a></li>
+                </div>
+                <div class="user">
+                    <li><i class="fa-solid fa-user"></i></li>
+                    <li><i class="fa-solid fa-cart-shopping"></i></li>
+                    <i class="fa-brands fa-facebook"></i>
+                    <li><i class="fa-brands fa-github"></i></li>
+                    <li><i class="fa-brands fa-instagram"></i></li>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- left bar -->
+    <div class="main-container">
+        <div>
+            <input type="checkbox" name="" id="side-menu-switch" />
+            <div class="side-menu">
+                <form action="">
+                    <input type="search" placeholder="輸入關鍵字" />
+                    <button><i class="fa fa-solid fa-magnifying-glass"></i></button>
+                </form>
+                <ul class="nav">
+                    <li>
+                        <a href="#" class="line"><i class="fa-solid fa-chart-line"></i>line</a>
+                        <ul>
+                            <li>
+                                <a href="#" class="left-a">Lorem, ipsum dolor.</a>
+                            </li>
+                            <li>
+                                <a href="#" class="left-a">Lorem, ipsum dolor.</a>
+                            </li>
+                            <li>
+                                <a href="#" class="left-a">Lorem, ipsum dolor.</a>
+                            </li>
+                            <li>
+                                <a href="#" class="left-a">Lorem, ipsum dolor.</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#" class="pie"><i class="fa-solid fa-chart-pie"></i>pie</a>
+                        <ul>
+                            <li><a href="" class="left-a">Lorem, ipsum.</a></li>
+                            <li><a href="" class="left-a">Lorem, ipsum.</a></li>
+                            <li><a href="" class="left-a">Lorem, ipsum.</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#" class="bar"><i class="fa-solid fa-chart-column"></i>bar</a>
+                        <ul>
+                            <li><a href="" class="left-a">Lorem, ipsum.</a></li>
+                            <li><a href="" class="left-a">Lorem, ipsum.</a></li>
+                            <li><a href="" class="left-a">Lorem, ipsum.</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#" class="polarArea"><i class="fa-solid fa-chart-gantt"></i>polarArea</a>
+                        <ul>
+                            <li><a href="" class="left-a">Lorem, ipsum.</a></li>
+                            <li><a href="" class="left-a">Lorem, ipsum.</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <label for="side-menu-switch">
+                    <i class="fa-solid fa-angle-right"></i>
+                </label>
+            </div>
+        </div>
+
+        <!--  圖片切換 -->
+
+        <div class="main-center-container">
+            <div class="main-pics">
+                <div class="main-page" id="main-page"><img src="1.jpg" alt=""></div>
+                <div class="main-page-container">
+                    <div class="pic-wrap"><img src="4.jpg" alt="3"></div>
+                    <div class="pic-wrap active"><img src="1.jpg" alt="1"></div>
+                    <div class="pic-wrap"><img src="2.jpg" alt="2"></div>
+                    <div class="pic-wrap"><img src="3.jpg" alt="3"></div>
+                </div>
+                <div class="main-text">
+                    <div class="main-text-container">
+                        <canvas id="myChart"></canvas>
+                    </div>
+                    <div class="main-text-container">
+                        <canvas id="myChart3"></canvas>
+                    </div>
+                </div>
+            </div>
+            <div class="main-right-container">
+                <h2>會員專區</h2>
+                <div>
+                    <div class="main-right-block">
+                        <div class="">
+                            <canvas id="myChart2"></canvas>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="main-right-block">
+                        <div class="">
+                            <canvas id="myChart4"></canvas>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="main-right-block">
+                        <div class="">
+                            <canvas id="myChart5"></canvas>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="main-right-block">
+                        <div class="">
+                            <canvas id="myChart6"></canvas>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="main-right-block"></div>
+                </div>
+            </div>
+        </div>
+        <!-- 圖表區 -->
+        <div class="main-chart">
+            <!-- <h1 class="text-center pt-4">家具價錢與重量關係圖</h1> -->
+            <div class="lineCt" id="chart-line">
+                <h2 class="text-center pt-4">家具vs價錢</h2>
+                <div class="container-chart">
+                    <canvas id="lineCt"></canvas>
+                </div>
+            </div>
+            <div class="pieCt" id="chart-pie">
+                <h2 class="text-center pt-4">家具vs價錢</h2>
+                <div class="container-chart">
+                    <canvas id="pieCt"></canvas>
+                </div>
+            </div>
+            <div class="barCt" id="chart-bar">
+                <h2 class="text-center pt-4">家具vs重量</h2>
+                <div class="container-chart">
+                    <canvas id="barCt"></canvas>
+                </div>
+            </div>
+            <div class="polarCt" id="chart-polar">
+                <h2 class="text-center pt-4">家具vs重量</h2>
+                <div class="container-chart">
+                    <canvas id="polarCt"></canvas>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- footer -->
+    <footer>
+        <div class="footer">
+            <div class="first_footer_container">
+                <div class="first_footer_text">
+                    <h4>Lorem, ipsum.</h4>
+                    <a href="">123654</a>
+                    <a href="">2165</a>
+                    <a href="">354478945</a>
+                </div>
+                <div class="first_footer_text">
+                    <h4>Lorem, ipsum.</h4>
+                    <a href="">123654</a>
+                    <a href="">2165</a>
+                    <a href="">354478945</a>
+                </div>
+                <div class="first_footer_text">
+                    <h4>Lorem, ipsum.</h4>
+                    <a href="">123654</a>
+                    <a href="">2165</a>
+                    <a href="">354478945</a>
+                </div>
+                <div class="first_footer_text_icon">
+                    <p><i class="fa-solid fa-otter"></i></p>
+                    <p><i class="fa-solid fa-dove"></i></p>
+                    <p><i class="fa-solid fa-paw"></i></p>
+                </div>
+                <div class="first_footer_text_fin">
+                    <h4>聯絡方式</h4>
+                    <p>phone:0912345678</p>
+                    <p>address:10659台北市大安區建國南路二段231號</p>
+                    <p>email:123456@gmail.com</p>
+                </div>
+            </div>
+            <div class="second_footer_container">
+                <div>
+                    <i class="fa-solid fa-earth-oceania"></i>
+                    <p>Lorem.isum</p>
+                </div>
+                <div>Lorem, ipsum.Lorem, ipsum.</div>
+                <div>link or icon</div>
+                <div>Lorem, ipsum or copyright &copy;</div>
+            </div>
+        </div>
+    </footer>
+</body>
+<!-- chartJS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.1/chart.min.js"
+    integrity="sha512-QSkVNOCYLtj73J4hbmVoOV6KVZuMluZlioC+trLpewV8qMjsWqlIQvkn1KGX2StWvPMdWGBqim1xlC8krl1EKQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<!-- jQuery -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+    integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<!-- ajax -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.1/chart.min.js"></script>
+<script src="./script.js">
+</script>
+
+</html>
